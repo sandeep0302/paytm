@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const bcrypt = require('bcrypt');
 
-mongoose.connect('mongodb+srv://sandeepgsgggg:sandeep123@cluster0.flofr.mongodb.net/')
+mongoose.connect(process.env)
 
 const UserSchema =  new mongoose.Schema({
    username:String,
